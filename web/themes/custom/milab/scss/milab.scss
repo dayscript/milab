@@ -284,6 +284,9 @@
         border-bottom: 1px solid #ddd;
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
+        min-height: 245px;
+        display: flex;
+        align-items: center;
     }
 
     .segmento {
@@ -310,8 +313,8 @@
     }
 
     .pie {
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        //justify-content: space-between;
         /*display: flex;
         justify-content: space-between;*/
 
@@ -427,7 +430,7 @@
     }
 
     .pie {
-        display: flex;
+        display: block;
         justify-content: space-between;
 
         .sector {
@@ -440,6 +443,9 @@
             line-height: 1;
             display: flex;
             align-items: center;
+            //padding-top: 1rem;
+            //border-top: 1px solid #dddddd;
+            margin-top: 0.8rem;
 
             &::before {
                 content: "";
@@ -460,6 +466,22 @@
                 color: #cf3f7e;
             }
         }
+    }
+}
+
+#block-webform {
+    .block-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        margin-top: 3rem;
+    }
+
+    [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: none;
+        font-size: 0.8rem;
     }
 }
 
@@ -632,7 +654,8 @@
     }
 }
 
-#block-formularioexpuestomarketplacepage-1 {
+#block-formularioexpuestomarketplacepage-1,
+#block-formularioexpuestomarketplacepage-2 {
     .form-checkboxes {
         .js-form-item {
             display: flex;
